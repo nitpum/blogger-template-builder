@@ -1,0 +1,26 @@
+extends ./base.jade
+
+block head
+    
+    block meta
+        meta(charset="UTF-8")/
+        meta(name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0")/
+        <b:include data="blog" name="all-head-content"/>
+    title
+        block title
+            <data:blog.pageTitle/>
+    block stylesheet
+
+    <b:skin>
+        <![CDATA[
+            block skin
+        | ]]>
+    </b:skin>
+    block template-skin
+
+    <b:include data="blog" name="google-analytics"/>
+
+    block head-addition
+
+block body
+    body
