@@ -17,6 +17,11 @@ mixin if()
         if block
             block
 
+mixin else()
+    b:else()&attributes(attributes)
+        if block
+            block
+
 mixin loop()
     b:loop()&attributes(attributes)
         if block
