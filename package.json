@@ -12,11 +12,13 @@
     "start": "node main.js"
   },
   "dependencies": {
+    "less": "^2.7.2",
     "pug": "^2.0.0-beta6"
   },
   "devDependencies": {
     "express": "^4.14.0",
     "gulp": "^3.9.1",
-    "gulp-less": "^3.3.0"
+    "gulp-less": "^3.3.0",
+    "gulp-pug": "^3.3.0"
   }
 }
