@@ -18,17 +18,25 @@ gulp.task('less', function () {
 
 });
 
-// Build template
+// Build and export template
 gulp.task('export', function () {
-    if (!argv.template)
-        return console.log("Please enter template name --template <templatename>");
 
-    const templateName = argv.template;
+    // Get argument
+    if (!argv.template && !argv.t)
+        return console.log("Please enter template name \"gulp export --template <templatename>\" ");
 
-    return gulp.src('./templates/' + templateName + '/index.pug')
-        .pipe(pug(
+    // Set template name and file path
+    const templateName = argv.template || argv.t;
+    const mainFile = './templates/' + templateName + '/index.pug';    
+    const minify = (argv.minify)? false : true;
+    
+    console.log("Get main file : " + mainFile);
 
-        ))
+    // Start gulp
+    return gulp.src(mainFile)
+        .pipe(pug({
+            pretty: minify
+        }))
         .pipe(rename( templateName + '.xml'))
         .pipe(gulp.dest('./build'))
 })
