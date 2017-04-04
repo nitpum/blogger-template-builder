@@ -1,0 +1,46 @@
+mixin var(string)
+    <Variable #{string} />
+
+
+
+mixin tp_var (string)
+    | $(#{string})
+
+mixin o(string)
+    | <#{string}>
+
+mixin c(string)
+    | </#{string}>
+
+mixin if()
+    b:if()&attributes(attributes)
+        if block
+            block
+
+mixin loop()
+    b:loop()&attributes(attributes)
+        if block
+            block
+
+mixin section()
+    b:section()&attributes(attributes)
+        if block
+            block
+
+mixin widget()
+    b:widget&attributes(attributes)
+        if block
+            block
+
+mixin message()
+    b:message&attributes(attributes)
+        if block
+            block
+
+mixin include()
+    b:include&attributes(attributes)/
+
+mixin includable()
+    b:includable&attributes(attributes)
+        if block
+            block
