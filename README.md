@@ -12,6 +12,16 @@ Currently no document so you must read the code and understand by yourself
 - Less
 - Gulp (task manager) 
 
+## How to use
+Create your template folder in templates folder
+"/templates/YourTemplateName/"
 
-# License
+each template must have "index.pug" to be a main file template (gulp with build template from this file)
+
+### Command
+- ```gulp export --template [template name]``` Build and export template
+- You can use ```--minify``` for minify your export result
+
+
+## License
 MIT
