@@ -19,6 +19,7 @@
     "express": "^4.14.0",
     "gulp": "^3.9.1",
     "gulp-less": "^3.3.0",
-    "gulp-pug": "^3.3.0"
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2"
   }
 }

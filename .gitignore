@@ -6,3 +6,4 @@ src/less/*
 src/css/*
 npm-debug.log
 templates/
+build/
