@@ -9,7 +9,8 @@
     "url": ""
   },
   "scripts": {
-    "start": "node main.js"
+    //"start": "node main.js"
+    "export" : "gulp export --all"
   },
   "dependencies": {
     "less": "^2.7.2",
