@@ -20,7 +20,7 @@ each template must have ```index.pug``` to be a main file template (gulp with bu
 
 <font color="red">```main.js``` still in working process to make it possible to render template in local</font>
 
-### Command
+## Command
 - ```npm run export``` or ```gulp export``` export all template
 - ```gulp export --template [template name]``` or ```gulp export -t [template name]``` export specific template
 - You can use ```--minify``` to minify your export result
