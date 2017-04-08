@@ -62,6 +62,13 @@ gulp.task('export', function () {
     }
 })
 
+// Auto export
+/*
+gulp.task('auto-export', function () {
+    gulp.watch('./templates/', []);
+});
+*/
+
 // Auto compile
 gulp.task('autocompile', function () {
     gulp.watch('./src/less/**/*.less', ['less']);
